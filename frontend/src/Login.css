@@ -1,7 +1,16 @@
 body {
-  background: url("https://pin.it/3eAXHvwMn.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: linear-gradient(
+    to bottom right,
+    #021538,
+    #2a5298,
+    #000000,
+    #ffffff
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .login-container {
@@ -14,7 +23,7 @@ body {
 .login-box {
   background-color: white;
   border-radius: 12px;
-  padding: 70px 20px;
+  padding: 50px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 350px; /* Width of the login box */
   text-align: left;
